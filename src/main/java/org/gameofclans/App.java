@@ -3,9 +3,11 @@ package org.gameofclans;
 import io.javalin.Javalin;
 import static io.javalin.apibuilder.ApiBuilder.*;
 
+import org.gameofclans.controllers.AuditController;
 import org.gameofclans.controllers.ClanController;
-import org.gameofclans.model.Clan;
+import org.gameofclans.repo.DbAuditRepository;
 import org.gameofclans.repo.DbClanRepository;
+import org.gameofclans.service.AuditServiceImpl;
 import org.gameofclans.service.ClanService;
 import org.gameofclans.service.ClanServiceImpl;
 import org.gameofclans.service.UserAddGoldService;
@@ -13,7 +15,6 @@ import org.hsqldb.cmdline.SqlFile;
 import org.hsqldb.jdbc.JDBCPool;
 
 import java.sql.Connection;
-import java.util.Optional;
 
 public class App {
     public App() throws Exception {
@@ -27,19 +28,26 @@ public class App {
             sf.execute();
         }
 
+        DbAuditRepository audit = new DbAuditRepository(pool);
+        AuditServiceImpl auditService = new AuditServiceImpl(audit);
         DbClanRepository dbClanRepository = new DbClanRepository(pool);
-        ClanService clanService = new ClanServiceImpl(dbClanRepository);
+        ClanService clanService = new ClanServiceImpl(dbClanRepository, auditService);
         UserAddGoldService userAddGoldService = createUserAddGoldService(clanService);
 
         ClanController clanController = new ClanController(clanService);
-
+        AuditController auditController = new AuditController(auditService);
         Javalin server = createWebServer(clanService)
                 .routes(() -> {
                     path("clans", () -> {
                         path("{clanId}", () -> {
                             get(clanController::get);
+                            post(clanController::addGold);
                         });
                     });
+                    path("audit", () -> {
+                        get(auditController::get);
+                    });
+
                 });
 
         server.start(8080);

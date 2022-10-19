@@ -2,7 +2,6 @@ package org.gameofclans.repo;
 
 import org.gameofclans.model.Clan;
 import org.hsqldb.jdbc.JDBCPool;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;

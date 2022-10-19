@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="41d0fa20-2175-47a3-bba9-a892d3347afa" name="Changes" comment="working web server and repos">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gameofclans/controllers/AuditController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gameofclans/model/AuditMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gameofclans/repo/AuditRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gameofclans/repo/DbAuditRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gameofclans/service/AuditService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gameofclans/service/AuditServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/gameofclans/repo/DbAuditRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/gameofclans/service/AuditServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/gameofclans/service/ClanServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gameofclans/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gameofclans/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gameofclans/controllers/ClanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gameofclans/controllers/ClanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gameofclans/repo/DbClanRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gameofclans/repo/DbClanRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gameofclans/service/ClanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gameofclans/service/ClanService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gameofclans/service/ClanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gameofclans/service/ClanServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/clans.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/clans.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2GB9L6GkI1wKzJkQ1chZEqSUZDV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;ALL&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.gameofclans.service" />
+      <recent name="org.gameofclans.model" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\YandexDisk\IdeaProjects\GameClans\src\main\resources" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="org.gameofclans.service" />
+      <recent name="org.gameofclans.repo" />
+    </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="org.gameofclans" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.gameofclans.repo" />
+      <recent name="org.gameofclans" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.gameofclans.service" />
+      <recent name="org.gameofclans" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.gameofclans.repo" />
+      <recent name="org.gameofclans.model" />
+      <recent name="org.gameofclans" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in GameClans">
+    <configuration name="All in GameClans" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GameOfClans" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuditServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GameOfClans" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.gameofclans.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.gameofclans.service" />
+      <option name="MAIN_CLASS_NAME" value="org.gameofclans.service.AuditServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuditServiceTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GameOfClans" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.gameofclans.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.gameofclans.service" />
+      <option name="MAIN_CLASS_NAME" value="org.gameofclans.service.AuditServiceTest" />
+      <option name="METHOD_NAME" value="add" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClanServiceImplTest.addGold" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GameOfClans" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.gameofclans.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.gameofclans.service" />
+      <option name="MAIN_CLASS_NAME" value="org.gameofclans.service.ClanServiceImplTest" />
+      <option name="METHOD_NAME" value="addGold" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DbAuditRepositoryTest.addAndList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GameOfClans" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.gameofclans.repo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.gameofclans.repo" />
+      <option name="MAIN_CLASS_NAME" value="org.gameofclans.repo.DbAuditRepositoryTest" />
+      <option name="METHOD_NAME" value="addAndList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in GameClans" />
+        <item itemvalue="JUnit.DbAuditRepositoryTest.addAndList" />
+        <item itemvalue="JUnit.ClanServiceImplTest.addGold" />
+        <item itemvalue="JUnit.AuditServiceTest.add" />
+        <item itemvalue="JUnit.AuditServiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41d0fa20-2175-47a3-bba9-a892d3347afa" name="Changes" comment="" />
+      <created>1665851056431</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665851056431</updated>
+    </task>
+    <task id="LOCAL-00001" summary="working web server and repos">
+      <created>1665936808992</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665936808992</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="working web server and repos" />
+    <option name="LAST_COMMIT_MESSAGE" value="working web server and repos" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-defaults>
+        <breakpoint suspend="THREAD" type="java-line" />
+      </breakpoints-defaults>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GameClans$DbClanRepositoryTest.ic" NAME="DbClanRepositoryTest Coverage Results" MODIFIED="1665853496451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.gameofclans.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/GameClans$DbClanRepositoryTest_get.ic" NAME="DbClanRepositoryTest.get Coverage Results" MODIFIED="1665852904507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.gameofclans.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/GameClans$All_in_GameClans.ic" NAME="All in GameClans Coverage Results" MODIFIED="1666198152868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
