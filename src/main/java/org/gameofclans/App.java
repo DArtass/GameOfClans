@@ -5,12 +5,11 @@ import static io.javalin.apibuilder.ApiBuilder.*;
 
 import org.gameofclans.controllers.AuditController;
 import org.gameofclans.controllers.ClanController;
+import org.gameofclans.controllers.TaskController;
 import org.gameofclans.repo.DbAuditRepository;
 import org.gameofclans.repo.DbClanRepository;
-import org.gameofclans.service.AuditServiceImpl;
-import org.gameofclans.service.ClanService;
-import org.gameofclans.service.ClanServiceImpl;
-import org.gameofclans.service.UserAddGoldService;
+import org.gameofclans.repo.DbTaskRepository;
+import org.gameofclans.service.*;
 import org.hsqldb.cmdline.SqlFile;
 import org.hsqldb.jdbc.JDBCPool;
 
@@ -29,24 +28,27 @@ public class App {
         }
 
         DbAuditRepository audit = new DbAuditRepository(pool);
-        AuditServiceImpl auditService = new AuditServiceImpl(audit);
+        AuditService auditService = new AuditServiceImpl(audit);
         DbClanRepository dbClanRepository = new DbClanRepository(pool);
+        DbTaskRepository dbTaskRepository = new DbTaskRepository(pool);
         ClanService clanService = new ClanServiceImpl(dbClanRepository, auditService);
-        UserAddGoldService userAddGoldService = createUserAddGoldService(clanService);
+        TaskService taskService = new TaskServiceImpl(clanService, dbTaskRepository, auditService);
 
         ClanController clanController = new ClanController(clanService);
         AuditController auditController = new AuditController(auditService);
+        TaskController taskController = new TaskController(taskService);
         Javalin server = createWebServer(clanService)
                 .routes(() -> {
-                    path("clans", () -> {
-                        path("{clanId}", () -> {
-                            get(clanController::get);
-                            post(clanController::addGold);
-                        });
-                    });
-                    path("audit", () -> {
-                        get(auditController::get);
-                    });
+                    path("clans", () ->
+                            path("{clanId}", () -> {
+                                get(clanController::get);
+                                post(clanController::addGold);
+                            }));
+                    path("tasks", () ->
+                            path("{taskId}", () ->
+                                    post(taskController::complete)));
+                    path("audit", () ->
+                            get(auditController::get));
 
                 });
 
@@ -54,10 +56,6 @@ public class App {
     }
     public static void main(String[] args) throws Exception {
         new App();
-    }
-
-    private static UserAddGoldService createUserAddGoldService(ClanService clanService) {
-        return new UserAddGoldService(clanService);
     }
 
    private static Javalin createWebServer(ClanService clans) {

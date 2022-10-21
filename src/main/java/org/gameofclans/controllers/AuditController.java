@@ -1,14 +1,15 @@
 package org.gameofclans.controllers;
 
 import io.javalin.http.Context;
+import org.gameofclans.service.AuditService;
 import org.gameofclans.service.AuditServiceImpl;
 
 import java.io.IOException;
 
 public class AuditController {
-    private final AuditServiceImpl auditService;
+    private final AuditService auditService;
 
-    public AuditController(AuditServiceImpl auditService) {
+    public AuditController(AuditService auditService) {
         this.auditService = auditService;
     }
 

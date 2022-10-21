@@ -30,7 +30,7 @@ public class ClanController {
     }
     @Data
     static class AddUserGold {
-        long userId;
-        int gold;
+        private long userId;
+        private int gold;
     }
 }
